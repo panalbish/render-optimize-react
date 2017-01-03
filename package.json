@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.18.0",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-friendly-formatter": "^2.0.6",
@@ -14,12 +19,12 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
     "canvas": "^1.6.2",
     "konva": "^1.2.2",
     "lodash.findindex": "^4.6.0",
     "lodash.times": "^4.3.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "react-konva": "^1.1.1",
     "redux": "^3.6.0"
   },
@@ -27,6 +32,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "now -e REACT_APP_SECRET_CODE=secretcode"
   }
 }

@@ -4,7 +4,7 @@
  https://medium.com/@lavrton/how-to-optimise-rendering-of-a-set-of-elements-in-react-ad01f5b161ae#.o6bs9eg24
  ```
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project is bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
 ## Available Scripts

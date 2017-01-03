@@ -1,25 +1,31 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Group, Circle } from 'react-konva';
 
-const Target = (props) => {
-  const { x, y, color, radius } = props.target;
-  return (
-    <Group x={x} y={y}>
-      <Circle
-        radius={radius}
-        fill={color}
-      />
-      <Circle
-        radius={radius * (1 / 2)}
-        fill="black"
-      />
-      <Circle
-        radius={radius * (1 / 4)}
-        fill="white"
-      />
-    </Group>
-  );
-};
+class Target extends Component {
+
+  shouldComponentUpdate(newProps) {
+    return this.props.target !== newProps.target;
+  }
+  render() {
+    const { x, y, color, radius } = this.props.target;
+    return (
+      <Group x={x} y={y}>
+        <Circle
+          radius={radius}
+          fill={color}
+        />
+        <Circle
+          radius={radius * (1 / 2)}
+          fill="black"
+        />
+        <Circle
+          radius={radius * (1 / 4)}
+          fill="white"
+        />
+      </Group>
+    );
+  }
+}
 
 Target.propTypes = {
   target: PropTypes.shape({
