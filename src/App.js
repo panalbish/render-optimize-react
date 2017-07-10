@@ -4,7 +4,7 @@ import { Stage, Layer } from 'react-konva';
 import Target from './components/Target';
 import store from './store';
 import logo from './logo.svg';
-import './App.css';
+import css from './App.css';
 
 class App extends Component {
   constructor(...args) {
@@ -22,8 +22,8 @@ class App extends Component {
     const width = window ? window.innerWidth : 800;
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <div className={css.appHeader}>
+          <img src={logo} className="appLogo" alt="logo" />
           <h2>Optimising React Rendering</h2>
         </div>
         <Stage width={width} height={height}>
