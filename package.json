@@ -19,7 +19,7 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "canvas": "^1.6.2",
+    "canvas": "^1.6.11",
     "konva": "^1.2.2",
     "lodash.findindex": "^4.6.0",
     "lodash.times": "^4.3.2",
